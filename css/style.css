@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+}
+
+.container{
+    width: 80%;
+    height: 85vh;
+    background-color: rgb(197, 197, 197);
+    margin: 20px auto;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.net{
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+/* bad-1 */
+.bad-1{
+    width: 10%;
+    position: absolute;
+    top: 290px;
+    left: 40px;
+    transition: transform 0.5s ease-in 0.1s;
+    transform-origin: bottom right;
+    position: relative;
+    transform: rotate(20deg);
+}
+
+.container:hover .bad-1{
+    transform: rotate(50deg);
+    transform-origin: bottom right;
+}
+
+/* bad-2 */
+.bad-2{
+    width: 10%;
+    position: absolute;
+    top: 290px;
+    left: 900px;
+    transition: transform 0.5s ease-in 1.1s;
+    transform-origin: bottom left;
+}
+.container:hover .bad-2{
+    transform: rotate(-45deg);
+    transform-origin: bottom left;
+}
+
+/* feather */
+
+.feather{
+    width: 4%;
+    position: relative;
+    top: 36%;
+    right: 0%;
+    transform: rotate(180deg);
+    transition: transform 1s ease-in 0.5s;
+}
+
+.container:hover .feather{
+    transform: translate(770px);
+}
